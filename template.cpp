@@ -56,12 +56,6 @@ ostream& operator<<(ostream& out, const vector<T>& v) {
     return out;
 }
 
-template <typename T, typename T2>
-ostream& operator<<(ostream& out, const unordered_map<T, T2> m) {
-    for (auto& [a, b] : m) out << a << ' ' << b << '\n';
-    return out;
-}
-
 #ifdef MATVEYPRO
 template <typename T>
 void dbg(const T& v, const string& name) {
